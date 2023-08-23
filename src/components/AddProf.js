@@ -24,7 +24,7 @@ export default function AddProf() {
       profMiddleName,
       department,
     };
-    const url = "http://127.0.0.1:8000/home/addProfessor"
+    const url = "https://hosting-rmp.onrender.com/home/addProfessor"
     try {
       const response = await axios.post(url, {professorData}); 
       console.log("Response from server:", response.data); 

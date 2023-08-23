@@ -13,7 +13,7 @@ import axios from "axios";
 export default function SearchByProfresult() {
   //The search result will return an array of objects having details of the required profs. the array will be passed as props to this component.
   //   let srchResult = props.resultedArray of objects;
-  let url = "http://127.0.0.1:8000/home/searchprof"
+  let url = "https://hosting-rmp.onrender.com/home/searchprof"
   const [srchResult, setSrchResult] = useState([]);
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
